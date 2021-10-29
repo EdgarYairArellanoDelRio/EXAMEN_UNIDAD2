@@ -1,0 +1,170 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+<!-- Head -->
+
+<head>
+    <title>JOSSY</title>
+    <!-- Meta-Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Prime login Form a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- //Meta-Tags -->
+    <!-- Index-Page-CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <!-- //Custom-Stylesheet-Links -->
+    <!--fonts -->
+    <!-- <link href="//fonts.googleapis.com/css?family=Mukta+Mahee:200,300,400,500,600,700,800" rel="stylesheet"> -->
+    <!-- //fonts -->
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="all">
+    <!-- //Font-Awesome-File-Links -->
+</head>
+<!-- //Head -->
+<!-- Body -->
+
+<body>
+<h1 class="title-agile text-center">El rock de jessica</h1><br />
+    <div class="content-w3ls">
+        <div class="content-bottom">
+            <form action="#" method="post">
+                <div class="field-group">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="text1"  type="text" value="" id = "Nombre_B" placeholder="Nombre de banda" required>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="text1"  type="text" value="" id = "Genero_B" placeholder="Género de la banda" required>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="text1" type="date" value="" id="Año_B" placeholder="Año" required>
+                    </div>
+                </div>
+                <div class="wthree-field">
+                    <button type="button" onclick="registrobanda();">Registrar Banda</button>
+                </div> 
+            </form>
+            <br \>
+            <form action="#" method="post">
+                <div class="field-group">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="text1"  type="text" value="" id = "Nombre_A" placeholder="Nombre de albun" required>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <select id="Banda_A"></select>
+                    </div>
+                </div>
+                
+                <div class="field-group">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="text1" type="date" value="" id="Año_A" placeholder="Año del Album" required>
+                    </div>
+                </div>
+                <div class="wthree-field">
+                    <button type="button" onclick="registroalbum();">Registrar Album</button>
+                </div> 
+            </form>
+            <br \>
+            <form action="#" method="post">
+                <div class="field-group">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <select id="Album_C"></select>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="text1"  type="text" value="" id = "Nombre_C" placeholder="Nombre de cancion" required>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="text1" type="text" value="" id="Duracion_C" placeholder="Duración de cancion" required>
+                    </div>
+                </div>
+                <div class="wthree-field">
+                    <button type="button" onclick="registrocancion();">Registrar Cancion</button>
+                </div>
+            </form>
+            <br \>
+            <form action="#" method="post">
+                <div class="field-group">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="text1"  type="text" value="" id = "Buscar" placeholder="Nombre" required>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <select id="opcion">
+                            <option value="1">Buscar Cancion</option>
+                            <option value="2">Mostrar por Album</option>
+                            <option value="3">Mostrar por Genero</option>
+                            <option value="4">Mostrar todo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="wthree-field">
+                    <button type="button" id="btn-opcion">Seleccionar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </fieldset> 
+    <hr> <table class="tab"> 
+        <thead> 
+            <tr> 
+                <td id="t1"></td>
+                <td id="t2"></td>
+                <td id="t3"></td>
+                <td id="t4"></td>
+            </tr>
+        </thead>
+        <tbody id="tab"></tbody>
+        <tfoot>
+            <tr>
+                <td id="c1"></td>
+                <td id="c2"></td>
+                <td id="c3"></td> 
+                <td id="c4"></td>
+            </tr>
+        </tfoot> 
+    </table> 
+    <div class="copyright text-center">
+        <p> La verdad esta todo demasiado cool :,3
+            <a href="http://w3layouts.com">W3layouts</a>
+        </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.7/dist/sweetalert2.all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="men.js"></script>
+</body>
+<!-- //Body -->
+</html>
